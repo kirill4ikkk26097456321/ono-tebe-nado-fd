@@ -1,1 +1,244 @@
-/* место для вашего кода */
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    width: 1100px;
+    height: 293px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    list-style: circle;
+    align-items: flex-start;
+}
+.header_logo {
+    width: 148px;
+    height: 105px;
+    
+}
+.addres {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    text-underline-offset: 3px;
+    max-width: 196px;
+    align-items: flex-start;
+    padding-bottom: 45px;
+}
+.cover {
+    position: relative;
+    padding: 165px 50px 50px;
+    background-image: url(../images/cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1100px;
+}
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    inset: 0;
+}
+
+.cover-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    line-height: 1.15;
+    row-gap: 24px;
+    margin-bottom: 106px;
+}
+
+
+.text {
+    z-index: 1;
+    display: block;
+}
+
+.aligned-text-left {
+    text-align: left;
+}
+.aligned-text-center {
+    text-align: center;
+}
+.aligned-text-right {
+    text-align: right;
+}
+
+.cover-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.cover-description-text {
+    color:#fff;
+    z-index: 1;
+    font-size: 22px;
+    text-transform: uppercase;
+    word-spacing: 18px;
+
+}
+.bet-button {
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: normal; font-size: 22px;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 12px 30px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.lots{
+    margin-top: 27px;
+    
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 40px;
+    width: 334px;
+    height: 596px;
+    position: relative;
+}
+.lots-heading {
+    margin-top: 180px;
+    text-transform: space-between;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 40px;
+}
+.lots-card-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card-title {
+    width: 254px;
+    height: 82px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    z-index: 1;
+    font-weight: 700;
+    color: #fff;
+    line-height: 120%;
+    font-size: 22px;
+}
+.card-text {
+    z-index: 1;
+    font-weight: 400;
+    color: #fff;
+    line-height: 120%;
+    font-size: 20px;
+    text-wrap: wrap;
+}
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-link {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+
+}
+.lots-look-more-link {
+    margin-left: 40px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.about {
+    align-items: start;
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 25px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 120px;
+    height: 595px;
+}
+.about-logo {
+    grid-row: span 3;
+    margin: 35px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 240px;
+    border-radius: 100%;
+    background-color: #000000;
+}
+.about-logo-image {
+  object-fit: contain;
+  width: 148px;
+  height: 114px;
+}
+.about-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 140px;
+
+}
+.first-text {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.second-text {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.footer {
+    margin-top: 180px;
+    width: 1100px;
+    height: 180px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-items: center;
+    align-items: start;
+
+}
+.logos {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-addres {
+    display: flex;
+    flex-direction: column;
+    text-underline-offset: 3px;
+    max-width: 264px;
+    font-size: 18px;
+}
